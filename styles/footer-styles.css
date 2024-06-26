@@ -1,0 +1,114 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Variables */
+
+:root {
+    --clr-Logo-Blue: #0324cf;
+    --clr-Logo-White: #fff;
+    --clr-hover-Blue:  #072be075;
+    --clr-text-gray: #dce4e6f1;
+}
+
+body {
+    color: var(--clr-Logo-Blue);
+    background-color: #fff;
+}
+
+footer#website-footer {
+    position: relative;
+    top: 850px;
+    width: 100%;
+    z-index: 100;
+    border-top: 5px solid var(--clr-Logo-Blue);
+    background-image: url(../images/background/footerbackground.png);
+}
+
+div.footer-wrapper {
+    padding: 2% 5%;
+    gap: 10em;
+}
+
+nav.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4em;
+}
+
+ul.footer-pages-1, .footer-pages-2 {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+}
+
+ul.footer-pages-1, .footer-pages-2 li {
+    font-size: 1.05rem;
+    text-shadow: 0.5px 0.5px var(--clr-hover-Blue);
+}
+
+ul.footer-pages-1, .footer-pages-2 li a {
+    text-decoration: none;
+}
+
+.footer-pages-1 li a:hover {
+    color: var(--clr-hover-Blue);
+}
+
+.footer-pages-2 li a:hover {
+    color: var(--clr-hover-Blue);
+}
+
+div#newsletter p {
+    font-size: 1.3rem;
+    padding-bottom: 1.5em;
+}
+
+div#newsletter input {
+    padding: 0.68em;
+    outline: none;
+    border: 2px solid var(--clr-Logo-Blue);
+    border-radius: 5px;
+    width: 200px;
+}
+
+div#newsletter button {
+    padding: 0.6em;
+    color: var(--clr-Logo-Blue);
+    font-weight: 600;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--clr-Logo-White);
+    border: 2px solid var(--clr-Logo-Blue);
+    border-radius: 5px;
+    width: 80px;
+    transition: all 0.2s;
+}
+
+div#newsletter button:hover {
+    background-color: var(--clr-Logo-Blue);
+    color: var(--clr-Logo-White);
+    cursor: pointer;
+}
+
+div#copywrights-info {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 8em;
+    padding: 1% 2%;
+    font-size: 0.85rem;
+}
+
+span.sm ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+span.sm li img {
+    width: 25px;
+}
